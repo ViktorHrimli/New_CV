@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Zen Dots", cursive;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #fd3838 74%);
 }
 
 a {
