@@ -1,6 +1,8 @@
 import React from "react";
 import { Box, Container } from "@mui/material";
 import Carousel from "nuka-carousel";
+import { ButtonLeft, ButtonRigth } from "./Card.styled";
+import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 import Item from "../ItemCard/Item";
 type Props = {};
 
@@ -14,16 +16,17 @@ const Card = (props: Props) => {
         pauseOnHover={true}
         animation="zoom"
         renderCenterLeftControls={({ previousDisabled, previousSlide }) => (
-          <button onClick={previousSlide} disabled={previousDisabled}>
-            Previous
-          </button>
+          <ButtonLeft onClick={previousSlide} disabled={previousDisabled}>
+            <AiOutlineArrowRight fill="white" size={20} />
+          </ButtonLeft>
         )}
         renderCenterRightControls={({ nextDisabled, nextSlide }) => (
-          <button onClick={nextSlide} disabled={nextDisabled}>
-            Next
-          </button>
+          <ButtonRigth onClick={nextSlide} disabled={nextDisabled}>
+            <AiOutlineArrowLeft fill="white" size={20} />
+          </ButtonRigth>
         )}
       >
+        <Item />
         <Item />
       </Carousel>
     </Container>

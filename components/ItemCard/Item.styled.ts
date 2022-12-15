@@ -5,11 +5,14 @@ const BlogSlyder = styled.div`
   position: relative;
   max-width: 800px;
   margin: auto;
-  background: #fff;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
   padding: 25px;
   border-radius: 25px;
   height: 350px;
+  background-image: url(../../public/backs1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   transition: all 0.3s;
 
   & img {

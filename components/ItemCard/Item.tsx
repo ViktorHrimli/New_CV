@@ -2,7 +2,6 @@ import React from "react";
 import { BlogSlyder } from "./Item.styled";
 import { Box } from "@mui/material";
 import { FcList } from "react-icons/fc";
-import Image from "next/image";
 
 type Props = {};
 
@@ -11,12 +10,14 @@ const Item = (props: Props): JSX.Element => {
     <BlogSlyder>
       <Box sx={{ display: "flex", gridGap: "20px" }}>
         <div>
-          <img
-            src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp"
-            alt="Photo"
-            width="250"
-            height="250"
-          />
+          <picture>
+            <img
+              src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp"
+              alt="Photo"
+              width="250"
+              height="250"
+            />
+          </picture>
         </div>
         <div>
           <span>
