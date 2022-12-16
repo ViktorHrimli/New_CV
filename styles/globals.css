@@ -5,7 +5,11 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Zen Dots", cursive;
-  background-image: linear-gradient(147deg, #ffe53b 0%, #fd3838 74%);
+  /* background-image: linear-gradient(147deg, #ffe53b 0%, #fd3838 74%); */
+  background-image: url(https://t4.ftcdn.net/jpg/01/98/24/71/360_F_198247162_JwrVkhqowZb4NJC24156nV6QYRhsV8Qf.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 a {

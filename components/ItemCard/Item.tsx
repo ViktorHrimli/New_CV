@@ -3,32 +3,56 @@ import { BlogSlyder } from "./Item.styled";
 import { Box } from "@mui/material";
 import { FcList } from "react-icons/fc";
 
-type Props = {};
+type PropsItem = {
+  id: number;
+  title: string;
+  discriptions: string;
+  stack: Array<string>;
+  role: string;
+  img: string;
+  page: string;
+  git: string;
+};
 
-const Item = (props: Props): JSX.Element => {
+const Item = ({
+  discriptions,
+  git,
+  img,
+  page,
+  role,
+  stack,
+  title,
+}: PropsItem): JSX.Element => {
   return (
     <BlogSlyder>
       <Box sx={{ display: "flex", gridGap: "20px" }}>
         <div>
           <picture>
-            <img
-              src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp"
-              alt="Photo"
-              width="250"
-              height="250"
-            />
+            <img src={img} alt="Photo" width="250" height="250" />
           </picture>
         </div>
         <div>
           <span>
-            Discription project <FcList />
+            {title} <FcList />
+            <p>Discriptions: {discriptions}</p>
+            <p>Role : {role}</p>
           </span>
 
-          <div>Stack</div>
-          <div>{}</div>
-          <a href="#">
+          <div>
+            <p>Stack</p>
+            <ul>
+              {stack.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
+          <div></div>
+
+          <a href={page}>
             <button type="button">Live Page</button>
           </a>
+
+          <a href={git}>GitHub</a>
         </div>
       </Box>
     </BlogSlyder>

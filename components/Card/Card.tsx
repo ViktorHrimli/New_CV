@@ -4,14 +4,15 @@ import Carousel from "nuka-carousel";
 import { ButtonLeft, ButtonRigth } from "./Card.styled";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 import Item from "../ItemCard/Item";
-type Props = {};
+import data from "../../db.json";
 
-const Card = (props: Props) => {
+const Card = () => {
   return (
     <Container maxWidth="md">
       <Carousel
         wrapAround={true}
         autoplay={false}
+        autoplayInterval={5000}
         slidesToShow={1}
         pauseOnHover={true}
         animation="zoom"
@@ -26,8 +27,7 @@ const Card = (props: Props) => {
           </ButtonRigth>
         )}
       >
-        <Item />
-        <Item />
+        {data && data.map((item) => <Item key={item.id} {...item} />)}
       </Carousel>
     </Container>
   );

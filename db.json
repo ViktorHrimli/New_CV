@@ -1,59 +1,136 @@
-{
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "body": "typicode"
-    },
-    {
-      "id": 2,
-      "title": "json-server",
-      "body": "typicode"
-    },
-    {
-      "id": 3,
-      "title": "json-server",
-      "body": "typicode"
-    },
-    {
-      "id": 4,
-      "title": "json-server",
-      "body": "typicode"
-    },
-    {
-      "id": 5,
-      "title": "json-server",
-      "body": "typicode"
-    },
-    {
-      "id": 6,
-      "title": "json-server",
-      "body": "typicode"
-    },
-    {
-      "id": 7,
-      "title": "json-server",
-      "body": "typicode"
-    },
-    {
-      "title": "awdawda",
-      "body": "awdawda",
-      "id": 8
-    },
-    {
-      "title": "newPost",
-      "body": "newPost",
-      "id": 9
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
+[
+  {
+    "id": 1,
+    "title": "WebStudio",
+    "discriptions": "First pet project in study course HTML adaptive layout",
+    "stack": ["HTML", "CSS3", "SCSS", "Adaptive", "layout", "Pixel", "Perfect"],
+    "role": "Developer",
+    "img": "https://images.unsplash.com/photo-1531327431456-837da4b1d562?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmlrZSUyMHJpZGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+    "page": "https://viktorhrimli.github.io/goit-markup-hw-08/",
+    "git": "https://github.com/ViktorHrimli/goit-markup-hw-08.git"
+  },
+  {
+    "id": 2,
+    "title": "Gallery Photo",
+    "discriptions": "Home work project in study course JS",
+    "stack": [
+      "HTML",
+      "CSS3",
+      "SCSS",
+      "JS",
+      "AXIOS",
+      "SimpleLightbox",
+      "Parcel",
+      "Notiflix"
+    ],
+    "role": "Developer",
+    "img": "https://images.unsplash.com/photo-1531327431456-837da4b1d562?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmlrZSUyMHJpZGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+    "page": "https://viktorhrimli.github.io/goit-js-hw-11/",
+    "git": "https://github.com/ViktorHrimli/goit-js-hw-11.git"
+  },
+  {
+    "id": 3,
+    "title": "Filmoteka",
+    "discriptions": "Application for choosing a movie",
+    "stack": [
+      "HTML",
+      "CSS3",
+      "SCSS",
+      "JS",
+      "AXIOS",
+      "Parcel",
+      "JQuery",
+      "TuiPagination",
+      "RestApi",
+      "Adaptive layout"
+    ],
+    "role": "Developer",
+    "img": "https://images.unsplash.com/photo-1531327431456-837da4b1d562?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmlrZSUyMHJpZGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+    "page": "https://bagetmasta.github.io/filmoteka/",
+    "git": "https://github.com/bagetmasta/filmoteka.git"
+  },
+  {
+    "id": 4,
+    "title": "Filmoteka/My version",
+    "discriptions": "Application for choosing a movie",
+    "stack": [
+      "HTML",
+      "CSS3",
+      "SCSS",
+      "JS",
+      "AXIOS",
+      "Parcel",
+      "RestApi",
+      "Adaptive layout"
+    ],
+    "role": "Developer",
+    "img": "https://images.unsplash.com/photo-1531327431456-837da4b1d562?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmlrZSUyMHJpZGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+    "page": "https://viktorhrimli.github.io/Filmoteka/",
+    "git": "https://github.com/ViktorHrimli/Filmoteka.git"
+  },
+  {
+    "id": 5,
+    "title": "BarberShop",
+    "discriptions": "First pet project by React",
+    "stack": [
+      "HTML",
+      "CSS3",
+      "SCSS",
+      "JS",
+      "React/hooks",
+      "Parcel",
+      "Styled-componetns",
+      "Pixel",
+      "Perfect",
+      "Adaptive",
+      "layout"
+    ],
+    "role": "Developer",
+    "img": "https://images.unsplash.com/photo-1531327431456-837da4b1d562?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmlrZSUyMHJpZGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+    "page": "https://viktorhrimli.github.io/BarberShop/",
+    "git": "https://github.com/ViktorHrimli/BarberShop.git"
+  },
+  {
+    "id": 5,
+    "title": "PhoneBook/JS",
+    "discriptions": "Contact storage app by React",
+    "stack": [
+      "HTML",
+      "CSS3",
+      "JS",
+      "React/Hooks",
+      "Redux/ToolKit/Thunk",
+      "Formik",
+      "Netlifix",
+      "Webpack",
+      "Styled-componetns",
+      "yup",
+      "yup-phone"
+    ],
+    "role": "Developer",
+    "img": "https://images.unsplash.com/photo-1531327431456-837da4b1d562?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmlrZSUyMHJpZGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+    "page": "https://viktorhrimli.github.io/goit-react-hw-08-phonebook/",
+    "git": "https://github.com/ViktorHrimli/goit-react-hw-08-phonebook.git"
+  },
+  {
+    "id": 6,
+    "title": "PhoneBook/TS",
+    "discriptions": "Contact storage app by React",
+    "stack": [
+      "HTML",
+      "CSS3",
+      "JS/TS",
+      "React/Hooks/Hook-Form",
+      "Redux/ToolKit/Thunk",
+      "Netlifix",
+      "Webpack",
+      "Styled-componetns",
+      "yup",
+      "yup-phone"
+    ],
+    "role": "Developer",
+    "img": "https://images.unsplash.com/photo-1531327431456-837da4b1d562?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmlrZSUyMHJpZGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+    "page": "https://ts-phonebook-react.netlify.app/",
+    "git": "https://github.com/ViktorHrimli/PhoneBook_TS.git"
   }
-}
+]

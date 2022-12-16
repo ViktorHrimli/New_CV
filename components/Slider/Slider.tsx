@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Box, Container, Slide } from "@mui/material";
 import Card from "../Card/Card";
-import { url } from "inspector";
 
 type Props = {};
 
@@ -18,6 +17,8 @@ const Slider = (props: Props) => {
               justifyContent: "center",
               marginTop: "20px",
               opacity: 1,
+              backgroundImage:
+                "url(https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg)",
               borderTopLeftRadius: "30px",
               borderBottomRightRadius: "30px",
               height: "370px",
