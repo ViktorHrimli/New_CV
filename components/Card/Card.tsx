@@ -15,14 +15,15 @@ const Card = () => {
         autoplayInterval={5000}
         slidesToShow={1}
         pauseOnHover={true}
+        speed={1000}
         animation="zoom"
-        renderCenterLeftControls={({ previousDisabled, previousSlide }) => (
-          <ButtonLeft onClick={previousSlide} disabled={previousDisabled}>
+        renderCenterLeftControls={({ nextDisabled, nextSlide }) => (
+          <ButtonLeft onClick={nextSlide} disabled={nextDisabled}>
             <AiOutlineArrowRight fill="white" size={20} />
           </ButtonLeft>
         )}
-        renderCenterRightControls={({ nextDisabled, nextSlide }) => (
-          <ButtonRigth onClick={nextSlide} disabled={nextDisabled}>
+        renderCenterRightControls={({ previousDisabled, previousSlide }) => (
+          <ButtonRigth onClick={previousSlide} disabled={previousDisabled}>
             <AiOutlineArrowLeft fill="white" size={20} />
           </ButtonRigth>
         )}

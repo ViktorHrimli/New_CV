@@ -1,6 +1,12 @@
-import React from "react";
-import { BlogSlyder } from "./Item.styled";
-import { Box } from "@mui/material";
+import React, { useEffect, useState } from "react";
+import {
+  BlogSlyder,
+  CardButton,
+  ConteinerCardText,
+  TitleCard,
+  TitleList,
+} from "./Item.styled";
+import { Box, Skeleton } from "@mui/material";
 import { FcList } from "react-icons/fc";
 
 type PropsItem = {
@@ -23,37 +29,54 @@ const Item = ({
   stack,
   title,
 }: PropsItem): JSX.Element => {
+  const [arrLength, setArrLength] = useState(() => {
+    if (stack.length > 7) return stack.slice(8);
+  });
+
   return (
     <BlogSlyder>
-      <Box sx={{ display: "flex", gridGap: "20px" }}>
-        <div>
+      <Box
+        sx={{
+          display: "flex",
+          gridGap: "20px",
+        }}
+      >
+        <Box sx={{ width: "300px", height: "290px", bgcolor: "black" }}>
           <picture>
-            <img src={img} alt="Photo" width="250" height="250" />
+            {/* <img src={img} alt="Photo" width="250" height="250" /> */}
           </picture>
-        </div>
-        <div>
-          <span>
-            {title} <FcList />
-            <p>Discriptions: {discriptions}</p>
-            <p>Role : {role}</p>
-          </span>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            gridGap: "20px",
+            width: "500px",
+          }}
+        >
+          <TitleCard>
+            <h3>{title}</h3>
+            <ConteinerCardText>
+              <strong>Discriptions:</strong> <p>{discriptions}</p>
+            </ConteinerCardText>
 
-          <div>
-            <p>Stack</p>
-            <ul>
-              {stack.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </div>
-          <div></div>
+            <ConteinerCardText>
+              <strong>Role: </strong>
+              <p>{role}</p>
+            </ConteinerCardText>
+          </TitleCard>
 
-          <a href={page}>
-            <button type="button">Live Page</button>
-          </a>
-
-          <a href={git}>GitHub</a>
-        </div>
+          <ConteinerCardText style={{ alignItems: "flex-start" }}>
+            <strong>Stack:</strong>
+            <p>{stack.join(" ")}</p>
+          </ConteinerCardText>
+          <ConteinerCardText>
+            <a href={page}>
+              <CardButton type="button">Live Page</CardButton>
+            </a>
+            <a href={git}>GitHub</a>
+          </ConteinerCardText>
+        </Box>
       </Box>
     </BlogSlyder>
   );
