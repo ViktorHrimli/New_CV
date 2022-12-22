@@ -9,10 +9,10 @@ const BlogSlyder = styled.div`
   padding: 25px;
   border-radius: 25px;
   height: 350px;
-  background-image: url(https://cdn.pixabay.com/photo/2016/08/13/17/59/background-1591227__340.jpg);
+  background-image: url(https://t4.ftcdn.net/jpg/01/98/24/71/360_F_198247162_JwrVkhqowZb4NJC24156nV6QYRhsV8Qf.jpg);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
   transition: all 0.5s;
 
   & img {
@@ -47,8 +47,7 @@ const CardButton = styled.button`
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial,
-    sans-serif;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 2.5;
