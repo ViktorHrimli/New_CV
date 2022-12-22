@@ -77,7 +77,7 @@ const CardButton = styled.button`
 const TitleCard = styled.div`
   display: inline-flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: baseline;
   justify-content: center;
   grid-gap: 10px;
 
@@ -96,7 +96,7 @@ const TitleList = styled.ul`
 const ConteinerCardText = styled.div`
   display: flex;
   grid-gap: 10px;
-  align-items: center;
+  align-items: baseline;
 `;
 
 export { BlogSlyder, TitleCard, TitleList, ConteinerCardText, CardButton };

@@ -8,8 +8,9 @@ const Navigations = (props: Props) => {
   return (
     <Box
       sx={{
-        display: "flex",
+        display: "block",
         marginLeft: "auto",
+        height: 20,
         color: "wheat",
         marginTop: "20px",
       }}

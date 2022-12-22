@@ -41,7 +41,7 @@ const Item = ({
           gridGap: "20px",
         }}
       >
-        <Box sx={{ width: "300px", height: "290px", bgcolor: "black" }}>
+        <Box sx={{ width: "300px", height: "290px", bgcolor: "wheat" }}>
           <picture>
             {/* <img src={img} alt="Photo" width="250" height="250" /> */}
           </picture>

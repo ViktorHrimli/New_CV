@@ -9,7 +9,7 @@ const Slider = (props: Props) => {
   return (
     <Slide direction="down" in={onShow}>
       {
-        <Container maxWidth="lg">
+        <Container maxWidth="md">
           <Card />
         </Container>
       }
