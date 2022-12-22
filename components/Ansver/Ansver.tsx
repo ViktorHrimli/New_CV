@@ -15,7 +15,7 @@ const objQuestions = {
 
 const Ansver = (props: Props) => {
   return (
-    <Container maxWidth="xs">
+    <Container maxWidth="xs" sx={{ marginBottom: "50px" }}>
       <QuestionList>
         {Object.entries(objQuestions).map((item, id) => (
           <QuestionItem key={id}>
