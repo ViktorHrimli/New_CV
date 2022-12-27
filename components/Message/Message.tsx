@@ -13,11 +13,13 @@ const Message = (props: Props) => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          gridGap: "20px",
+          gridGap: "72px",
         }}
       >
         <Box
           sx={{
+            position: "absolute",
+            top: "20px",
             display: "block",
             width: "250px",
             height: "250px",
@@ -28,7 +30,7 @@ const Message = (props: Props) => {
           <></>
         </Box>
 
-        <Box sx={{ marginTop: "auto" }}>
+        <Box sx={{ marginTop: "150px" }}>
           <MessageParagraph>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
             beatae iusto. Itaque iusto cum, iste, qui at totam aliquam
