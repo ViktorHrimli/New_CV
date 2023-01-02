@@ -32,10 +32,12 @@ const Message = (props: Props) => {
 
         <Box sx={{ marginTop: "150px" }}>
           <MessageParagraph>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-            beatae iusto. Itaque iusto cum, iste, qui at totam aliquam
-            temporibus nesciunt facere voluptatum saepe facilis voluptatibus.
-            Totam esse dolor a..
+            Hi, i'm a Software Developer adept one year in bringing forth
+            expertise in installation, testing and maintenance of software
+            systems and I like it. In addition i have eight my project and three
+            team project. I want becam strong developer thats why i study
+            evryday. But i want find team and probably friends where i can
+            deploy my goal.
           </MessageParagraph>
         </Box>
       </Box>
