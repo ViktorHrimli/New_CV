@@ -5,12 +5,13 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Work Sans", sans-serif;
-  /* background-image: linear-gradient(147deg, #ffe53b 0%, #fd3838 74%); */
-  background-image: url(https://t4.ftcdn.net/jpg/01/98/24/71/360_F_198247162_JwrVkhqowZb4NJC24156nV6QYRhsV8Qf.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: black;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(46, 46, 169, 1) 35%,
+    rgba(11, 194, 231, 1) 100%
+  );
   color: wheat;
 }
 

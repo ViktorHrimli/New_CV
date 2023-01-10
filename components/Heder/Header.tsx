@@ -17,7 +17,7 @@ const Header = (props: Props): JSX.Element => {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <h1 style={{ color: "white", marginRight: 100 }}>
+      <h1 style={{ color: "white", marginRight: 100, marginTop: 20 }}>
         Viktor Hrimli <br />
         Junior Frontend Developer
       </h1>
@@ -29,7 +29,6 @@ const Header = (props: Props): JSX.Element => {
           justifyContent: "center",
           marginTop: "200px",
           bgcolor: "#101a24",
-          opacity: 0.8,
           borderRadius: "20px",
           width: "400px",
           height: "400px",

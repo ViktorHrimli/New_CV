@@ -9,10 +9,7 @@ const BlogSlyder = styled.div`
   padding: 25px;
   border-radius: 25px;
   height: 350px;
-  background-image: url(https://t4.ftcdn.net/jpg/01/98/24/71/360_F_198247162_JwrVkhqowZb4NJC24156nV6QYRhsV8Qf.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: #101a24;
   transition: all 0.5s;
 
   & img {

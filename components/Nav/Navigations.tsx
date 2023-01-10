@@ -15,7 +15,9 @@ const Navigations = (props: Props) => {
         marginTop: "20px",
       }}
     >
-      <Link href={"resume"}>Resume</Link>
+      <Link style={{ color: "black", fontWeight: 600 }} href={"resume"}>
+        Resume
+      </Link>
     </Box>
   );
 };
