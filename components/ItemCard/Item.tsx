@@ -7,7 +7,6 @@ import {
   TitleList,
 } from "./Item.styled";
 import { Box, Skeleton } from "@mui/material";
-import { FcList } from "react-icons/fc";
 
 type PropsItem = {
   id: number;

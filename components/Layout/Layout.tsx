@@ -11,7 +11,7 @@ const Layout: React.FC<LayoutTypes> = ({ children }) => {
     <>
       <Header />
       {children}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

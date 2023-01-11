@@ -23,14 +23,14 @@ const Ansver = (props: Props) => {
           <QuestionItem key={id}>
             <strong
               style={{
-                // display: "flex",
-                // justifyContent: "center",
                 textAlign: "start",
-                gridGap: 8,
-                letterSpacing: 0.1,
+                letterSpacing: "0.01em",
               }}
             >
-              <RecordVoiceOverIcon sx={{}} /> {item[0]}
+              <RecordVoiceOverIcon
+                sx={{ position: "absolute", top: "3px", left: "3px" }}
+              />
+              {item[0]}
             </strong>
             <p>{item[1]}</p>
           </QuestionItem>

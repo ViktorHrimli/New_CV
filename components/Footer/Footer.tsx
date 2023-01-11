@@ -1,9 +1,12 @@
 import React, { FC } from "react";
+import { Box } from "@mui/material";
 
 type Props = {};
 
 const Footer = (props: Props): JSX.Element => {
-  return <div>{`<Created by Viktor{"HRIMLI"}/>`}</div>;
+  return (
+    <Box sx={{ backgroundColor: "" }}>{`<Created by Viktor{"HRIMLI"}/>`}</Box>
+  );
 };
 
 export default Footer;
